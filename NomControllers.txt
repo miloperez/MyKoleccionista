@@ -1,0 +1,34 @@
+	//IMAGENES
+	//TABLAS
+	//COMBO BOX
+	//FECHAS
+	//SPINNERS
+	//BOTONES
+	//CAMPOS DE TEXTO
+	//VARIABLES LOCALES
+
+	public void initialize() {
+	}
+
+	public void clickTabla() {
+	}
+
+	/*aceptar, cancelar, agregar, editar, borrar*/
+
+	private void MostrarControles() {
+	}
+	
+	private void Limpiar() {
+	}
+
+	@FXML
+	private void click_ButtonGoBack(ActionEvent actionEvent) {
+	Stage stage = (Stage)  _ButtonGoBack.getScene().getWindow();
+	stage.close();
+	}
+
+	/*botones propios de la pantalla*/
+
+
+
+

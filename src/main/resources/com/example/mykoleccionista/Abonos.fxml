@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mykoleccionista.GUI.AbonosController">
+   <children>
+      <Button fx:id="AbonosButtonGoBack" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#clickAbonosButtonGoBack" text="&lt;-">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="47.0" layoutY="15.0" prefHeight="30.0" prefWidth="203.0" text="Abonos">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="55.0" prefHeight="30.0" prefWidth="75.0" text="idPreventa">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AbonosTextIdPreventa" editable="false" layoutX="90.0" layoutY="55.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="115.0" prefHeight="30.0" prefWidth="75.0" text="Abonado">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AbonosTextAbonado" editable="false" layoutX="90.0" layoutY="115.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="145.0" prefHeight="30.0" prefWidth="75.0" text="Abonar">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AbonosTextAbonar" layoutX="90.0" layoutY="145.0" onKeyTyped="#clickAbonosTextAbonar" prefHeight="25.0" prefWidth="102.0" />
+      <Label layoutX="14.0" layoutY="205.0" prefHeight="30.0" prefWidth="75.0" text="Fecha">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="AbonosDatePFecha" layoutX="90.0" layoutY="205.0" onAction="#clickAbonosDatePFecha" prefHeight="25.0" prefWidth="160.0" />
+      <TableView fx:id="AbonosTable" layoutX="266.0" layoutY="15.0" onMouseClicked="#clickAbonosTable" prefHeight="218.0" prefWidth="320.0" />
+      <Button fx:id="AbonosButtonAceptar" layoutX="69.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickAbonosButtonAceptar" text="Aceptar" />
+      <Button fx:id="AbonosButtonCancelar" layoutX="139.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickAbonosButtonCancelar" text="Cancelar" />
+      <Button fx:id="AbonosButtonAgregar" layoutX="30.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickAbonosButtonAgregar" text="Agregar" />
+      <Button fx:id="AbonosButtonEditar" layoutX="112.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickAbonosButtonEditar" text="Editar" />
+      <Button fx:id="AbonosButtonBorrar" layoutX="188.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickAbonosButtonBorrar" text="Borrar" />
+      <Label layoutX="14.0" layoutY="175.0" prefHeight="30.0" prefWidth="75.0" text="Restante">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AbonosTextRestante" editable="false" layoutX="90.0" layoutY="175.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="85.0" prefHeight="30.0" prefWidth="75.0" text="Total">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AbonosTextTotal" editable="false" layoutX="90.0" layoutY="85.0" prefWidth="160.0" />
+      <Button fx:id="AbonosButtonLiquidar" layoutX="191.0" layoutY="145.0" mnemonicParsing="false" onAction="#clickAbonosButtonLiquidar" text="Liquidar" />
+      <Button fx:id="AbonosButtonReporte" layoutX="376.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickAbonosButtonReporte" text="Generar reporte" />
+   </children>
+</Pane>

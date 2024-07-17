@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mykoleccionista.GUI.ListTPController">
+   <children>
+      <TableView fx:id="ListTable" layoutX="266.0" layoutY="15.0" onMouseClicked="#clickListTable" prefHeight="250.0" prefWidth="320.0" />
+      <Label layoutX="47.0" layoutY="15.0" prefHeight="30.0" prefWidth="200.0" text="Tipo Producto">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="66.0" prefHeight="30.0" prefWidth="75.0" text="id">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="101.0" prefHeight="30.0" prefWidth="75.0" text="Descripcion">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ListTextId" layoutX="90.0" layoutY="66.0" prefWidth="160.0" />
+      <TextField fx:id="ListTextDesc" layoutX="90.0" layoutY="101.0" prefWidth="160.0" />
+      <Button fx:id="ListbuttonAgregar" layoutX="18.0" layoutY="180.0" mnemonicParsing="false" onAction="#clickListbuttonAgregar" text="Agregar" />
+      <Button fx:id="ListbuttonEditar" layoutX="115.0" layoutY="180.0" mnemonicParsing="false" onAction="#clickListbuttonEditar" text="Editar" />
+      <Button fx:id="ListbuttonBorrar" layoutX="201.0" layoutY="180.0" mnemonicParsing="false" onAction="#clickListbuttonBorrar" text="Borrar" />
+      <Button fx:id="ListbuttonAceptar" layoutX="69.0" layoutY="230.0" mnemonicParsing="false" onAction="#clickListbuttonAceptar" text="Aceptar" />
+      <Button fx:id="ListbuttonCancelar" layoutX="139.0" layoutY="230.0" mnemonicParsing="false" onAction="#clickListbuttonCancelar" text="Cancelar" />
+      <Button fx:id="ListbuttonGoBack" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#clickListbuttonGoBack" text="&lt;-">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

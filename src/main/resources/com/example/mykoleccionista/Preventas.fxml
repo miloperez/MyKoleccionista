@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mykoleccionista.GUI.PreventasController">
+   <children>
+      <Button fx:id="PreventasButtonGoBack" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#clickPreventasButtonGoBack" text="&lt;-">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="86.0" layoutY="14.0" text="Preventas">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="60.0" prefHeight="30.0" prefWidth="75.0" text="idPreventa">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PreventasTextId" layoutX="90.0" layoutY="60.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="120.0" prefHeight="30.0" prefWidth="75.0" text="Cliente">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="PreventasComboCliente" layoutX="90.0" layoutY="120.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="360.0" prefHeight="30.0" prefWidth="75.0" text="Total">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PreventasTextTotal" editable="false" layoutX="90.0" layoutY="360.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="180.0" prefHeight="30.0" prefWidth="75.0" text="Estado">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="PreventasComboEstado" layoutX="90.0" layoutY="180.0" prefHeight="25.0" prefWidth="135.0" />
+      <Button fx:id="PreventasButtonEstadoMas" layoutX="225.0" layoutY="180.0" mnemonicParsing="false" onAction="#clickPreventasButtonEstadoMas" text="+" />
+      <Label layoutX="14.0" layoutY="240.0" prefHeight="30.0" prefWidth="75.0" text="Fecha Inicio">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="PreventasDatePInicio" layoutX="90.0" layoutY="240.0" prefHeight="25.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="300.0" prefHeight="30.0" prefWidth="75.0" text="Productos">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PreventasTextProductos" layoutX="90.0" layoutY="300.0" prefWidth="160.0" />
+      <TableView fx:id="PreventasTable" layoutX="266.0" layoutY="20.0" onMouseClicked="#clickPreventasTable" prefHeight="391.0" prefWidth="360.0" />
+      <Button fx:id="PreventasButtonAceptar" layoutX="48.0" layoutY="435.0" mnemonicParsing="false" onAction="#clickPreventasButtonAceptar" text="Aceptar" />
+      <Button fx:id="PreventasButtonCancelar" layoutX="140.0" layoutY="435.0" mnemonicParsing="false" onAction="#clickPreventasButtonCancelar" text="Cancelar" />
+      <Button fx:id="PreventasButtonAbonar" layoutX="99.0" layoutY="410.0" mnemonicParsing="false" onAction="#clickPreventasButtonAbonar" text="Abonar" />
+      <Button fx:id="PreventasButtonAgregar" layoutX="23.0" layoutY="410.0" mnemonicParsing="false" onAction="#clickPreventasButtonAgregar" text="Agregar" />
+      <Button fx:id="PreventasButtonBorrar" layoutX="181.0" layoutY="410.0" mnemonicParsing="false" onAction="#clickPreventasButtonBorrar" text="Borrar" />
+      <Button fx:id="PreventasButtonReporte" layoutX="396.0" layoutY="423.0" mnemonicParsing="false" onAction="#clickPreventasButtonReporte" text="Generar reporte" />
+   </children>
+</Pane>
